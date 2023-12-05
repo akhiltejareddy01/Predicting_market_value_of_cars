@@ -1,0 +1,45 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"], button {
+  margin-top: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+#market-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#listings-table {
+  max-height: 400px;
+  overflow-y: auto;
+}

@@ -1,0 +1,34 @@
+<!-- results.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Market Value Results</title>
+</head>
+<body>
+    <h1>Car Market Value Results</h1>
+    <h2>Estimated Market Price: ${{ market_price }}</h2>
+
+    <h3>Sample Listings:</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Index value</th>
+                <th>Vechicle_ID</th>
+                <th>Price</th>
+                <th>Mileage</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for listing in listings %}
+            <tr>
+                <td>{{ listing[0] }}</td>
+                <td>${{ listing[1] }}</td>
+                <td>{{ listing[2] }}</td>
+                <td>{{ listing[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Market Value Estimator</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+  <h1>Car Market Value Estimator</h1>
+  <div class="search-container">
+    <form action="/results" method="GET">
+      <label for="car-input">Year + Make + Model:</label>
+      <input type="text" id="car-input" name="car" required>
+      <br>
+      <label for="mileage-input">Mileage:</label>
+      <input type="number" id="mileage-input" name="mileage">
+      <br>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
